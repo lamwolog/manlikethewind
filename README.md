@@ -1,5 +1,5 @@
 # manlikethewind
-（1）
+## （1）
 用户基本信息：姓名、年龄、性别、职业、联系方式、常住城市。
 购车偏好：意向车型（轿车 / SUV 等）、品牌倾向、预算范围、动力类型（燃油 / 电动等）、车身颜色偏好、座位数需求。
 消费行为：过往购车次数、置换 / 全款 / 贷款选择、年均行驶里程、保养支出习惯、关注促销活动频率、线上线下购车渠道倾向。
@@ -7,11 +7,13 @@
 常见评估数据参数指标有准确性、完整性、一致性、时效性、有效性。
 数据审核流程：先制定计划，接着预处理数据，再实施审核，记录反馈问题，整改后复查，最后撰写报告。
 审核方法有人工审核、逻辑检查、对比分析、统计分析、程序审核，可依数据特点灵活选用。
-2、数据库查询
+
+## 2、数据库查询
 （2）select * from t_s;
 （3）select * from t_s where salary is not null;
 （4）select * from t_s inner join t_r on t_r.id=t_s.no;
-3、水果分类
+
+## 3、水果分类
 (2)#以下1行需要背 from torchvision import datasets
 #划分数据集：
 folder=dataset.ImageFolder(root='C:/水果种类智能训练考试文件/水果图片',transform=trans_compose); n=len(folder);n1=int(n*0.8);n2=n-n1;
@@ -26,7 +28,7 @@ epoch accuracy =metricsf.compute()print(f'Epoch {i + 1},Loss: {epoch loss:.4f}, 
 重置评估指标
 metricsf.reset();torch.save(model.state dict(),'2-2model test.pth')
 print("模型已保存为 2-2model test.pth")
-4、神经网络
+## 4、神经网络
 （2）class MyNet(nn.Module):def init (self):super(MyNet, self). init ();
 self.fc1 = nn.Linear(287,128);self.bn1 = nn.BatchNorm1d(128);self.relu1 = nn.ReLU();
 self.fc2 = nn.Linear(128,256);self.bn2 = nn.BatchNorm1d(256);self.relu2 = nn.ReLU();
@@ -34,7 +36,7 @@ self.fc3 = nn.Linear(256,1);
 def forward(self, x):x = self.fc1(x);x = self.bn1(x);x = self.relu(x);
 x = self.fc2(x);x = self.bn2(x);x = self.relu(x);out = self.fc3(x);
 return out;
-5、数据采集培训方法（注意修改不可雷同）
+## 5、数据采集培训方法（注意修改不可雷同）
 （1）基础认知：明晰数据采集概念、重要性与应用场景。
 方法技巧：讲授多种采集方式，涵盖网络、传感器等，分享实操窍门。
 工具运用：熟练掌握 Excel、Python 等工具用于数据获取与整理。
