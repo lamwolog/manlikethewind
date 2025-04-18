@@ -14,7 +14,8 @@
 （4）select * from t_s inner join t_r on t_r.id=t_s.no;
 
 ## 3、水果分类
-(2)#以下1行需要背 from torchvision import datasets
+(2)#以下1行需要背 
+from torchvision import datasets
 #划分数据集：
 folder=dataset.ImageFolder(root='C:/水果种类智能训练考试文件/水果图片',transform=trans_compose); n=len(folder);n1=int(n*0.8);n2=n-n1;
 train,test=random_split(folder,[n1,n2]);
@@ -47,8 +48,3 @@ return out;
 隐私与合规问题
 问题：采集敏感个人信息未获授权，或违反行业法规，面临法律风险。
 解决方法：设立数据合规官，负责解读法规政策；采集前向用户明确告知数据用途、范围、存储方式，获用户同意；加密敏感数据，遵循 “最小必要” 原则采集。
-
-作者：用户473406723969
-链接：https://juejin.cn/spost/7494448615240106019
-来源：稀土掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
